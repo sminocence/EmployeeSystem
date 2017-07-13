@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>登录</title>
+	<style type="text/css">
+		body{
+			
+			background-image: url(../image/1.jpg);
+			background-repeat: no-repeat;
+		}
+		.login{
+			width: 299px;
+			height: 337px;
+			border: 1px solid #E3E3E3;
+			margin: 0 auto;
+			margin-top:200px;
+			background-color: #F5F5F5;
+		}
+		.enjoy_item{
+			width: 299px;
+			height: 40px;
+			display: block;
+			background-color: #303F70;
+			color: #FFFFE8;
+			text-align: center;
+			font-size: 20px;
+			padding-top: 20px;
+			letter-spacing: 8px;
+		}
+		.login_area{
+			width: 240px;
+			height: 259px;
+			margin:  0 auto;
+		}
+		.login_bar{
+			width: 246px;
+			height: 65px;
+			margin-top: 16px;
+		}
+		.login_user{
+			width: 238px;
+			height: 25px;
+			float: left;
+			color: #464646;
+			font-size: 14px;
+			letter-spacing: 5px;
+		}
+		.login_image{
+			width: 30px;
+			height: 30px;
+			border: 1px solid #BEBEBE;
+			border-right: none;
+			float: left;
+		}
+		.login_pass{
+			width: 238px;
+			height: 25px;
+			float: left;
+			color: #464646;
+			font-size: 14px;
+			letter-spacing: 5px;
+		}
+		.forget_pass{
+			width: 71px;
+			height: 23px;
+			color: #BABABA;
+			font-size: 14px;
+			float: right;
+			text-decoration: none;
+		}
+		.login_image{
+			width: 30px;
+			height: 32px;
+		}
+		.input_bar{
+			border: 1px solid #BEBEBE;
+			width: 207px;
+			height: 30px;
+			border-left: none;
+		}
+		.checkbox{
+			width: 12px;
+			height: 12px;
+			margin-left: 3px;
+			margin-top: 5px;
+			float: left;
+		}
+		.remem_id{
+			width: 211px;
+			height: 24px;
+			float: left;
+			margin-left: 10px;
+			margin-top: 2px;
+			font-size: 14px;
+			color: #BABABA;
+			
+		}
+		.login_in{
+			width: 240px;
+			height: 46px;
+			background-color: #C0A960;
+			color: #FFFFFF;
+			font-size: 18px;
+			border:none;
+			border-radius: 5px;
+			letter-spacing: 3px;
+		}
+		/*.register{
+			width: 61px;
+			height: 17px;
+			float: left;
+			margin-top: 6px;
+			font-size: 12px;
+			color: #939393;
+			float: right;
+		}*/
+		.reset{
+			border: none;
+			background:none;
+			color: #F1A38D;
+			font-size: 14px;
+			font-weight: bold;
+			margin-top: 5px;
+			float: right;
+		}
+		.regist{
+			/*width: 60px;
+			height: 17px;
+			color: #F1A38D;
+			margin-top: 6px;
+			font-size: 14px;
+			float: right;
+			*/
+			border: none;
+			background:none;
+			color: #F1A38D;
+			font-size: 14px;
+			font-weight: bold;
+			margin-top: 5px;
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div class="login">								
+		<span class="enjoy_item">登录</span>
+		<form class="login_area" action="Emp/login.do">			
+			<div class="login_bar">
+				<span class="login_user">账号：</span>
+				<img src="../image/login_person.jpg" class="login_image">
+				<input type="text" class="input_bar" name="ind_zhanghao">
+			</div>
+			<div class="login_bar">
+				<span class="login_pass">密码：</span>
+				<!-- <a href="#" class="forget_pass">忘记密码？</a> -->
+					<img src="../image/login_pass.jpg" class="login_image">
+					<input type="password" class="input_bar" name="ind_mima">
+			</div>
+			<input type="checkbox" class="checkbox">
+			<span class="remem_id">记住账号，下次登录免输入</span>
+			<input type="submit" class="login_in" value="提交">
+			
+			<input type="reset" value="注册" class="regist" onclick="location='zhuce.jsp'"/>
+
+
+			
+		</form>
+	</div>
+</body>
+</html>
